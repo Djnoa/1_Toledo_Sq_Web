@@ -1,0 +1,35 @@
+.navibar {
+    position: relative;
+    overflow: hidden;
+    background-color: #201f1f;
+    opacity: 0;
+}
+
+
+.navibar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 7px 7px;
+    text-decoration: none;
+}
+
+.navibar a:hover {
+    background-color: #ddd;
+    transition: 0.7s ease-in-out;
+    color: black;
+}
+
+.navibar-nav {
+    float: left;
+}
+
+.navi-link {
+    margin-left: 10px;
+}
+
+
+.navibar-link:first-child {
+    margin-left: 0px;
+
+}

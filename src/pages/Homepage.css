@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.header-image {
+    opacity:0; 
+    margin-bottom: 20px;
+}
+
+.welcome {
+    position: absolute;
+    font-size: 57px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(213, 244, 246, 0.594);
+    padding: 5px 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 800;
+    text-wrap: nowrap;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em; 
+    opacity: 0;
+    
+}
+
+
+
+/* .first-heading {
+
+    text-align: center; 
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 30px;
+    margin-bottom: 43px;
+    font-family: 'Bitter', serif;
+    font-size: 2.2em;
+    letter-spacing: 0.02em;
+    word-spacing: 0.08em;
+    background-color: rgba(3, 116, 128, 0.123);
+    text-wrap: nowrap;
+
+
+} */
+
+.text-box {
+    width: 80% ;
+    /* margin-left: 30px; */
+    /* margin-top: 50px; */
+    padding: 10px 10px 10px 10px;
+    font-family: 'Bitter'; 
+    font-size: 1.1em;
+    background-color: rgba(3, 116, 128, 0.123);
+
+}
+
+.text-box li {
+
+        margin: 10px 0;
+}
+
+ .pong-img {
+     width: 100%;
+     margin-top: 120px;
+} 
+
+div.trim {
+    max-width: 700px;
+    margin-left: -155px; 
+    max-height:440px;
+    overflow: hidden;
+}

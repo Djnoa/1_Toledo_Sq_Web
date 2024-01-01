@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './pages/LandingPage.js';
+import FinalHtmlContext from './contexts/FinalHtmlContext'; // Ensure correct path
+import Homepage from "./pages/Homepage.js"
 import './App.css';
 
-function App() {
+const App = () => {
+  const [finalHtml, setFinalHtml] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <FinalHtmlContext.Provider value={{ finalHtml, setFinalHtml }}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<Homepage />} /> {/* Add the Homepage route */}
+          {/* Add other Routes as needed */}
+        </Routes>
+        {/* Place other components outside the Routes if needed */}
+      </FinalHtmlContext.Provider>
+    </Router>
   );
-}
+};
 
 export default App;
