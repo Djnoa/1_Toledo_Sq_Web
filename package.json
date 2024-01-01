@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://djnoa.github.io/1-Toledo-Sq-Web/", 
+  "homepage": "/1-Toldedo-Sq-Web", 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

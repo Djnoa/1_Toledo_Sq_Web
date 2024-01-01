@@ -5,19 +5,7 @@ import './Homepage.css';
 import NavBar from '../components/navibar.js';
 import '../styles/main.scss'
 import Footer from '../components/footer.js';
-
-// Header images
-import headerImage1 from '../assets/header-img.jpg';
-import headerImage2 from '../assets/header-img2.jpg';
-import headerImage3 from '../assets/header-img3.jpg';
-import headerImage4 from '../assets/header-img4.jpg';
-import headerImage5 from '../assets/header-img5.jpg';
-import headerImage6 from '../assets/header-img6.jpg';
-import headerImage7 from '../assets/header-img7.jpg';
-
-// Other images
-import pongImage from './assets/pong.jpg';
-
+import { headerImagePaths, pongImage } from '../imagePaths.config.js'
 
 const headerImages = [
     headerImage1, 
@@ -106,7 +94,7 @@ const Homepage = () => {
 
                         <div className = 'col-lg-4'>
 
-                        <div class="trim"><img className = "pong-img" src={pongImage}/></div>
+                        <div class="trim"><img className = "pong-img" src={{pongImage}}/></div>
 
                         </div>
 
