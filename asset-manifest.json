@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/1_Toledo_Sq_Web/static/css/main.e453d52b.css",
-    "main.js": "/1_Toledo_Sq_Web/static/js/main.34da6b4d.js",
+    "main.js": "/1_Toledo_Sq_Web/static/js/main.154e889f.js",
     "static/js/787.d5fa4d18.chunk.js": "/1_Toledo_Sq_Web/static/js/787.d5fa4d18.chunk.js",
     "static/media/header-img6.jpg": "/1_Toledo_Sq_Web/static/media/header-img6.9e0cd380b628770d4bac.jpg",
     "static/media/header-img3.jpg": "/1_Toledo_Sq_Web/static/media/header-img3.32a70e5ffe3795d2e49a.jpg",
@@ -14,11 +14,11 @@
     "static/media/toledo_club_logo.png": "/1_Toledo_Sq_Web/static/media/toledo_club_logo.a12c147009f5c24a788c.png",
     "index.html": "/1_Toledo_Sq_Web/index.html",
     "main.e453d52b.css.map": "/1_Toledo_Sq_Web/static/css/main.e453d52b.css.map",
-    "main.34da6b4d.js.map": "/1_Toledo_Sq_Web/static/js/main.34da6b4d.js.map",
+    "main.154e889f.js.map": "/1_Toledo_Sq_Web/static/js/main.154e889f.js.map",
     "787.d5fa4d18.chunk.js.map": "/1_Toledo_Sq_Web/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e453d52b.css",
-    "static/js/main.34da6b4d.js"
+    "static/js/main.154e889f.js"
   ]
 }
