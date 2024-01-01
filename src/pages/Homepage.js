@@ -106,7 +106,7 @@ const Homepage = () => {
 
                         <div className = 'col-lg-4'>
 
-                        <div class="trim"><img className = "pong-img" src={{pongImage}}/></div>
+                        <div class="trim"><img className = "pong-img" src={pongImage}/></div>
 
                         </div>
 
