@@ -16,7 +16,7 @@ import headerImage6 from '../assets/header-img6.jpg';
 import headerImage7 from '../assets/header-img7.jpg';
 
 // Other images
-import pongImage from './assets/pong.jpg';
+import pongImage from '../assets/pong.jpg';
 
 
 const headerImages = [
