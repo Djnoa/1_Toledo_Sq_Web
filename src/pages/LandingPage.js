@@ -1,7 +1,6 @@
-import React, { useContext, useRef, useEffect } from 'react';
+import React, {useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import './LandingPage.css';
-import FinalHtmlContext from '../contexts/FinalHtmlContext';
 import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
@@ -10,29 +9,7 @@ const LandingPage = () => {
     const squashTextRef = useRef(null);
     const landingPageRef = useRef(null);
     const wrapperRef = useRef(null); 
-    const { setFinalHtml } = useContext(FinalHtmlContext);
-    const navigate = useNavigate();
-
-    const getFinalStyles = (element) => {
-        const clone = element.cloneNode(true);
-        const style = window.getComputedStyle(element);
-    
-        Array.from(clone.children).forEach((child, index) => {
-            const childStyle = window.getComputedStyle(element.children[index]);
-            for (let prop of childStyle) {
-                child.style[prop] = childStyle[prop];
-            }
-        });
-    
-        for (let prop of style) {
-            clone.style[prop] = style[prop];
-        }
-    
-        return clone.outerHTML;
-    };
-    
-
-    
+    const navigate = useNavigate(null);
 
     useEffect(() => {
         const squashBall = squashBallRef.current;
@@ -92,15 +69,12 @@ const LandingPage = () => {
                     duration: 0.9,
                     ease: 'power2.inOut',
                     onComplete: () => {
-                        // Change the height of the landing page div to 15vh
                         gsap.to(landingPage, {
                             delay: 0.3,
                             height: "22vh",
                             duration: 0.7,
                             ease: "power1.in",
                             onComplete: () => {
-                                const finalHtmlContent = getFinalStyles(landingPageRef.current);
-                                setFinalHtml(finalHtmlContent);
                                 setTimeout(() => {
                                     navigate('/home');
                                   }, 1000);
@@ -113,7 +87,7 @@ const LandingPage = () => {
 
         // Start the animation
         tl.play();
-    }, []);
+    }, [navigate]);
 
     return (
         <div className="wrapper" ref={wrapperRef}>

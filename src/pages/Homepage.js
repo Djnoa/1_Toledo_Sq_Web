@@ -83,7 +83,7 @@ const Homepage = () => {
             <div className="container-fluid main-content">
                 <div className="row">
                     <div className="col-lg-12">
-                        <h4 class="first-heading"></h4>
+                        <h4 className="first-heading"></h4>
                     </div>
                 </div>
 
@@ -106,7 +106,7 @@ const Homepage = () => {
 
                         <div className = 'col-lg-4'>
 
-                        <div class="trim"><img className = "pong-img" src={pongImage}/></div>
+                        <div className="trim"><img className = "pong-img" src={pongImage}/></div>
 
                         </div>
 
