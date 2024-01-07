@@ -211,7 +211,7 @@ const Banner = () => {
         viewTransitionName: 'none',
         visibility: 'visible',
         widows: 2,
-        width: '1258px',
+        width: '100vw',
         willChange: 'auto',
         wordBreak: 'normal',
         writingMode: 'horizontal-tb',
